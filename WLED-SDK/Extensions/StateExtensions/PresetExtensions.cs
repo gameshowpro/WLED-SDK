@@ -1,5 +1,4 @@
-﻿using Newtonsoft.Json.Linq;
-using WLED_SDK.Builders;
+﻿using WLED_SDK.Builders;
 using WLED_SDK.WledClients;
 
 namespace WLED_SDK.Extensions.StateExtensions;
