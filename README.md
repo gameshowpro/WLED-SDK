@@ -1,20 +1,19 @@
-# WLED-SDK
+# WLED-SDK: .NET Wrapper for WLED
 
 An unofficial .NET Wrapper for the [WLED](https://kno.wled.ge/) [JSON API](https://kno.wled.ge/interfaces/json-api/), enabling real-time communication with WLED devices via WebSockets ~~or HTTP~~. Designed to simplify control and interaction with WLED devices using C#.
 
-## Compatibility
-
-This library is compatible with [WLED v0.14.x](https://github.com/Aircoookie/WLED/releases/tag/v0.14.0) and later.
-
-### Note
-
-This library is not affiliated with the WLED or its creator. For official information and support, please refer to the [website](https://kno.wled.ge/) or [GitHub repository](https://github.com/Aircoookie/WLED).
+> [!IMPORTANT]
+> This library is not officially supported or affiliated with WLED or its creator. For official information and support, please refer to the [WLED website](https://kno.wled.ge/) or the [GitHub repository](https://github.com/Aircoookie/WLED) maintained by the original developers.
 
 ## Features
 
 1. **Realtime Communication**: Send and receive data from WLED devices in real-time using WebSockets.
 2. **Network Discovery**: Automatically discover WLED devices on the local network using mDNS.
 3. **Easy to Use**: Simple and intuitive extension methods for controlling WLED devices.
+
+## Compatibility
+
+This library is compatible with [WLED v0.14.x](https://github.com/Aircoookie/WLED/releases/tag/v0.14.0) and later.
 
 ## Installation
 
