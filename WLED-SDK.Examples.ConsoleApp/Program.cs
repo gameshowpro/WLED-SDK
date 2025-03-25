@@ -17,8 +17,9 @@ Console.Write("> ");
 Console.CursorLeft = 2;
 /* ======================================= */
 
-using var client = new WledWebsocketClient("ledstrip.local");
-client.OnStateChanged += (sender, eventArgs) => PrintHelper.PrintState(eventArgs.State, 1, 1, maxStateHeight);
+using var client = new WledWebsocketClient("10.183.52.10");
+client.OnStateChanged += (sender, eventArgs) => 
+PrintHelper.PrintState(eventArgs.State, 1, 1, maxStateHeight);
 client.OnDisconnected += (sender, eventArgs) => PrintHelper.Print($"Disconnected: {eventArgs.Type}", errorTop, 1, ConsoleColor.Red);
 
 try
