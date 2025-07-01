@@ -14,6 +14,11 @@
       </ProjectReference>
     </ItemGroup>
 
+      <PropertyGroup>
+        <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+        <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
+      </PropertyGroup>
+
     <Target Name="CopyProjectReferencesToPackage" DependsOnTargets="BuildOnlySettings;ResolveReferences">
       <ItemGroup>
         <BuildOutputInPackage Include="$(OutputPath)WLED-SDK.Core.dll" />
