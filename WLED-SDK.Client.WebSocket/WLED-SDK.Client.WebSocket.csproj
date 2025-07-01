@@ -17,7 +17,7 @@
     <ItemGroup>
       <ProjectReference Include="..\WLED-SDK.Core\WLED-SDK.Core.csproj" >
         <PrivateAssets>all</PrivateAssets>
-        <IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        <IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive; runtime</IncludeAssets>
       </ProjectReference>
     </ItemGroup>
 
