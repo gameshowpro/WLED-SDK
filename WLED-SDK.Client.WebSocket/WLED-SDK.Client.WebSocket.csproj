@@ -8,7 +8,15 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\WLED-SDK.Core\WLED-SDK.Core.csproj" />
+      <ProjectReference Include="..\WLED-SDK.Core\WLED-SDK.Core.csproj" >
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </ProjectReference>
     </ItemGroup>
 
+    <Target Name="CopyProjectReferencesToPackage" DependsOnTargets="BuildOnlySettings;ResolveReferences">
+      <ItemGroup>
+        <BuildOutputInPackage Include="$(OutputPath)WLED-SDK.Core.dll" />
+      </ItemGroup>
+    </Target>
 </Project>
